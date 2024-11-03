@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrapTheme/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/books.png">
+    <title>MyBookList</title>
+</head>
+<body>
+    <main class="container mt-4">
+        <h1 class="text-center display-4">
+            <i class="fa-solid fa-book text-primary"></i>
+            My<span class="text-primary">Book</span>List
+        </h1>
+        <form id="book-form">
+            <div class="mb-3">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="author">Author</label>
+                <input type="text" id="author" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="isbn">ISBN#</label>
+                <input type="text" id="isbn" class="form-control">
+            </div>
+            <div class="d-grid"><button type="submit" class="btn btn-primary">Add Book</button></div>
+        </form>
+
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN#</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
